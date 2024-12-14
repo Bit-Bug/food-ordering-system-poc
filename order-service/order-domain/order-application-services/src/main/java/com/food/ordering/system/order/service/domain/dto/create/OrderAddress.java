@@ -14,24 +14,10 @@ public class OrderAddress {
     @NotNull
     @Max(value = 50)
     private final String street;
-
     @NotNull
     @Max(value = 10)
     private final String postalCode;
-
     @NotNull
-    @Max(value=50)
+    @Max(value = 50)
     private final String city;
-
-    public @NotNull @Max(value = 50) String getStreet() {
-        return street;
-    }
-
-    public @NotNull @Max(value = 10) String getPostalCode() {
-        return postalCode;
-    }
-
-    public @NotNull @Max(value = 50) String getCity() {
-        return city;
-    }
 }

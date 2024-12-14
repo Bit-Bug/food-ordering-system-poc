@@ -5,8 +5,8 @@ import lombok.Builder;
 import lombok.Getter;
 
 import javax.validation.constraints.NotNull;
-import java.util.UUID;
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @Getter
 @Builder
@@ -20,20 +20,4 @@ public class OrderItem {
     private final BigDecimal price;
     @NotNull
     private final BigDecimal subTotal;
-
-    public @NotNull UUID getProductId() {
-        return productId;
-    }
-
-    public @NotNull Integer getQuantity() {
-        return quantity;
-    }
-
-    public @NotNull BigDecimal getPrice() {
-        return price;
-    }
-
-    public @NotNull BigDecimal getSubTotal() {
-        return subTotal;
-    }
 }
