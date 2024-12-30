@@ -64,6 +64,10 @@ public class OrderApplicationServiceTest {
 //    @Autowired
 //    private ObjectMapper objectMapper;
 
+
+
+
+
     private CreateOrderCommand createOrderCommand;
     private CreateOrderCommand createOrderCommandWrongPrice;
     private CreateOrderCommand createOrderCommandWrongProductPrice;
